@@ -35,6 +35,7 @@
             this.carnetModificadoLabel = new System.Windows.Forms.Label();
             this.LogopictureBox = new System.Windows.Forms.PictureBox();
             this.qrCodePictureBox = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.LogopictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qrCodePictureBox)).BeginInit();
             this.SuspendLayout();
@@ -101,11 +102,20 @@
             this.qrCodePictureBox.TabIndex = 6;
             this.qrCodePictureBox.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Green;
+            this.panel1.Location = new System.Drawing.Point(-7, 250);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(637, 79);
+            this.panel1.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 325);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.qrCodePictureBox);
             this.Controls.Add(this.LogopictureBox);
             this.Controls.Add(this.carnetModificadoLabel);
@@ -114,7 +124,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Validar Cárne";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LogopictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qrCodePictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -131,6 +142,7 @@
         private System.Windows.Forms.Label carnetModificadoLabel;
         private System.Windows.Forms.PictureBox LogopictureBox;
         private System.Windows.Forms.PictureBox qrCodePictureBox;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
